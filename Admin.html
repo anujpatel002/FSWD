@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        /* #allUsers{
+            display: flex;
+            flex-direction: row;
+            gap: 90px;
+        } */
+        .user{
+            color: green;
+        }
+        #search{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1 >hello <span id="greet"></span></h1>
+    <h1>All Users</h1>
+    <div id="search">
+        <input type="text" id="searchInput" placeholder="Search by username or name">
+        <button id="searchBtn">Search</button>
+        <button id="clearBtn">Clear</button>
+    </div>
+    <div id="display">
+        <table border="1" id="allUsers">
+            <tr>
+                <td>Sr No</td>
+                <td>User Name</td>
+                <td>Name</td>
+                <td>Role</td>
+                <td>Actions</td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="addUser">
+    <h1>Add User</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="ausername" id="ausername" placeholder="Enter Username"></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="aname" id="aname" placeholder="Enter Name"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="apassword" id="apassword" placeholder="Enter Password"></td>
+            </tr>
+            <tr>
+                <td>Role</td>
+                <td>
+                    <select name="role" id="arole">
+
+                        <option disabled selected>Select</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="btnAddUser" type="button">Add</button></td>
+            </tr>
+        </table>
+         
+    </form>
+    </div>
+
+    <h1>Search User</h1>
+    <div id="searchUser">
+        <input type="text" name="search" id="search" placeholder="Search user by name and username">
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
